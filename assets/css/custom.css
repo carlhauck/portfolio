@@ -22,6 +22,12 @@
   font-style: normal;
 }
 
+:root {
+  --color1: #282b2c;
+  --color2: #ddd3d0;
+  --color3: palevioletred;
+}
+
 body {
   font-family: 'geomanist';
 }
@@ -31,23 +37,28 @@ h1 {
 }
 
 .highlight {
-  color: palevioletred;
+  color: var(--color3);
 }
 
 .section-one {
-  background-color: #282b2c;
-  color: #ddd3d0;
+  background-color: var(--color1);
+  color: var(--color2);
 }
+
 .section-two {
-  background-color: #ddd3d0;
-  color: #282b2c;
+  background-color: var(--color2);
+  color: var(--color1);
 }
+
 svg {
-  margin: 0.7em 0.7em 0 0.7em;
+  margin: 0.75em;
 }
+
 svg g,
-svg path {
-  fill: #ddd3d0;
+svg path,
+svg polyline,
+svg polygon {
+  fill: var(--color2);
 }
 
 svg:hover g,
@@ -59,4 +70,12 @@ svg:hover polygon {
 
 svg:hover {
   cursor: pointer;
+}
+
+.p-light {
+  font-family: 'geomanist-light';
+}
+
+a:hover {
+  text-decoration: none;
 }
