@@ -26,6 +26,7 @@
   --color1: #282b2c;
   --color2: #ddd3d0;
   --color3: palevioletred;
+  --color4: #d9dbdc;
 }
 
 body {
@@ -46,7 +47,7 @@ h1 {
 }
 
 .section-two {
-  background-color: var(--color2);
+  background-color: var(--color4);
   color: var(--color1);
 }
 
