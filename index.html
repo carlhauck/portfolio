@@ -10,10 +10,30 @@
 </head>
 
 <body>
-  <!-- <nav class="navbar sticky-top navbar-light bg-light">
-    <a class="navbar-brand" href="#">Sticky top</a>
-  </nav> -->
-  <div class="section-one">
+  <!-- Navbar start -->
+  <nav class="navbar navbar-expand-lg fixed-bottom navbar-transparent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link p-light" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-light" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-light" href="./Resume.pdf" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+  
+  <!-- Section one start -->
+  <div id="section-one">
     <div class="container">
       <div class="d-flex flex-column justify-content-center align-items-center vh-100">
         <div class="align-self-center">
@@ -22,47 +42,56 @@
         <div class="align-self-center">
           <!-- GitHub -->
           <a href="https://github.com/carlhauck">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>logo-github</title><g fill="#111111"><path fill-rule="evenodd" clip-rule="evenodd" fill="#111111" d="M16,0.4c-8.8,0-16,7.2-16,16c0,7.1,4.6,13.1,10.9,15.2 c0.8,0.1,1.1-0.3,1.1-0.8c0-0.4,0-1.4,0-2.7c-4.5,1-5.4-2.1-5.4-2.1c-0.7-1.8-1.8-2.3-1.8-2.3c-1.5-1,0.1-1,0.1-1 c1.6,0.1,2.5,1.6,2.5,1.6c1.4,2.4,3.7,1.7,4.7,1.3c0.1-1,0.6-1.7,1-2.1c-3.6-0.4-7.3-1.8-7.3-7.9c0-1.7,0.6-3.2,1.6-4.3 c-0.2-0.4-0.7-2,0.2-4.2c0,0,1.3-0.4,4.4,1.6c1.3-0.4,2.6-0.5,4-0.5c1.4,0,2.7,0.2,4,0.5C23.1,6.6,24.4,7,24.4,7 c0.9,2.2,0.3,3.8,0.2,4.2c1,1.1,1.6,2.5,1.6,4.3c0,6.1-3.7,7.5-7.3,7.9c0.6,0.5,1.1,1.5,1.1,3c0,2.1,0,3.9,0,4.4 c0,0.4,0.3,0.9,1.1,0.8C27.4,29.5,32,23.5,32,16.4C32,7.6,24.8,0.4,16,0.4z"></path></g></svg>
+            <svg class="monochrome" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>logo-github</title><g fill="#111111"><path fill-rule="evenodd" clip-rule="evenodd" fill="#111111" d="M16,0.4c-8.8,0-16,7.2-16,16c0,7.1,4.6,13.1,10.9,15.2 c0.8,0.1,1.1-0.3,1.1-0.8c0-0.4,0-1.4,0-2.7c-4.5,1-5.4-2.1-5.4-2.1c-0.7-1.8-1.8-2.3-1.8-2.3c-1.5-1,0.1-1,0.1-1 c1.6,0.1,2.5,1.6,2.5,1.6c1.4,2.4,3.7,1.7,4.7,1.3c0.1-1,0.6-1.7,1-2.1c-3.6-0.4-7.3-1.8-7.3-7.9c0-1.7,0.6-3.2,1.6-4.3 c-0.2-0.4-0.7-2,0.2-4.2c0,0,1.3-0.4,4.4,1.6c1.3-0.4,2.6-0.5,4-0.5c1.4,0,2.7,0.2,4,0.5C23.1,6.6,24.4,7,24.4,7 c0.9,2.2,0.3,3.8,0.2,4.2c1,1.1,1.6,2.5,1.6,4.3c0,6.1-3.7,7.5-7.3,7.9c0.6,0.5,1.1,1.5,1.1,3c0,2.1,0,3.9,0,4.4 c0,0.4,0.3,0.9,1.1,0.8C27.4,29.5,32,23.5,32,16.4C32,7.6,24.8,0.4,16,0.4z"></path></g></svg>
           </a>
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/carlhauck/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>logo-linkedin</title><g fill="#111111"><path d="M29,1H3A2,2,0,0,0,1,3V29a2,2,0,0,0,2,2H29a2,2,0,0,0,2-2V3A2,2,0,0,0,29,1ZM9.887,26.594H5.374V12.25H9.887ZM7.63,10.281a2.625,2.625,0,1,1,2.633-2.625A2.624,2.624,0,0,1,7.63,10.281ZM26.621,26.594H22.2V19.656c0-1.687,0-3.75-2.35-3.75s-2.633,1.782-2.633,3.656v7.126H12.8V12.25h4.136v1.969h.094a4.7,4.7,0,0,1,4.231-2.344c4.513,0,5.359,3,5.359,6.844Z" fill="#111111"></path></g></svg>
+            <svg class="monochrome" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>logo-linkedin</title><g fill="#111111"><path d="M29,1H3A2,2,0,0,0,1,3V29a2,2,0,0,0,2,2H29a2,2,0,0,0,2-2V3A2,2,0,0,0,29,1ZM9.887,26.594H5.374V12.25H9.887ZM7.63,10.281a2.625,2.625,0,1,1,2.633-2.625A2.624,2.624,0,0,1,7.63,10.281ZM26.621,26.594H22.2V19.656c0-1.687,0-3.75-2.35-3.75s-2.633,1.782-2.633,3.656v7.126H12.8V12.25h4.136v1.969h.094a4.7,4.7,0,0,1,4.231-2.344c4.513,0,5.359,3,5.359,6.844Z" fill="#111111"></path></g></svg>
           </a>
           <!-- Email -->
           <a href="mailto:carlhauck@gmail.com">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>letter</title><g fill="#111111"><path d="M17.412,20.647a3,3,0,0,1-2.822,0L0,12.867V25a3.957,3.957,0,0,0,4,4H28a3.957,3.957,0,0,0,4-4V12.867Z" fill="#111111"></path> <path d="M28,3H4A3.957,3.957,0,0,0,0,7v3a1,1,0,0,0,.529.883l15,8a1.007,1.007,0,0,0,.942,0l15-8A1,1,0,0,0,32,10V7A3.957,3.957,0,0,0,28,3Z"></path></g></svg>
+            <svg class="monochrome" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>letter</title><g fill="#111111"><path d="M17.412,20.647a3,3,0,0,1-2.822,0L0,12.867V25a3.957,3.957,0,0,0,4,4H28a3.957,3.957,0,0,0,4-4V12.867Z" fill="#111111"></path> <path d="M28,3H4A3.957,3.957,0,0,0,0,7v3a1,1,0,0,0,.529.883l15,8a1.007,1.007,0,0,0,.942,0l15-8A1,1,0,0,0,32,10V7A3.957,3.957,0,0,0,28,3Z"></path></g></svg>
           </a>
         </div>
       </div>
     </div>
   </div>
-  <div class="section-two">
+  <div id="about">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 justify-content-center align-items-center">
         <div class="col-md-7 col-sm-10">
           <h1><span class="highlight">About me</span></h1>
-          <p class="p-light">I'm Carl, a software engineer based in Chicago, IL. Before graduating from <span class="highlight">Actualize Coding Bootcamp</span> in August 2020, I was a SaaS solutions analyst, high school English teacher, freelance writer/editor, rideshare driver, and teen who asked if you wanted cheese with those fries. (Not all at the same time, of course.)</p>
-          <p class="p-light">I am a firm believer in the value of mission-driven technology, data-backed storytelling, and continual learning and improvement. Throughout my professional career, I’ve dedicated myself not only to being a dependable and detail-oriented collaborator, but also to spreading curiosity, creativity, and humor amongst my colleagues.</p>
-          <p class="p-light">Outside of work, I enjoy reading, creating music, developing board games, and eating ice cream. I'll leave you with a dark secret: During quarantine, I've developed a perverse affinity for hand washing dishes.</p>
+          <p class="p-light">My name's Carl, and I'm a software engineer based in Chicago, IL. Before graduating from <span class="highlight">Actualize Coding Bootcamp</span> in August 2020, I was, among other things, a solutions analyst at a SaaS company, a high school English teacher, a freelance writer/editor, a touring musician, a rideshare driver, and the teenager who asked if you wanted cheese with those fries.</p>
+          <p class="p-light">I'm a firm believer in the value of mission-driven technology, data-backed storytelling, and continual learning and improvement. Throughout my professional career, I’ve dedicated myself not only to being a dependable and detail-oriented collaborator, but also to spreading curiosity, creativity, and humor amongst my colleagues.</p>
+          <p class="p-light">Outside of work, I enjoy reading, creating music, developing board games, and eating ice cream. I'll leave you with this dark secret: During quarantine, I've developed a perverse affinity for hand washing dishes.</p>
         </div>
         <div class="col-md-3 schools">
           <div class="row justify-content-center">
-            <!-- Universities -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 64 64"><title>hat-3-5</title><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.4" fill="#111111" stroke="#111111"><path fill="none" stroke="#111111" stroke-miterlimit="10" d="M12,22v20c0,4.971,8.954,9,20,9 c11.046,0,20-4.029,20-9V22" stroke-linecap="butt"></path> <polyline fill="none" stroke-miterlimit="10" points="44,54 49,61 39,61 44,54 44,26 " stroke-linecap="butt"></polyline> <polygon fill="none" stroke="#111111" stroke-miterlimit="10" points="32,32 4,18 32,4 60,18 "></polygon></g></svg>
+            <!-- Coding -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><title>file-js</title><g><polygon fill="#CC4842" points="44,27 4,27 1,23 5,19 43,19 47,23 "></polygon> <path fill="#FFFFFF" d="M41,47H7c-1.105,0-2-0.895-2-2V3c0-1.105,0.895-2,2-2l24,0l12,12v32C43,46.105,42.105,47,41,47z"></path> <path fill="#B3B3B3" d="M31,1v10c0,1.105,0.895,2,2,2h10L31,1z"></path> <path fill="#E86C60" d="M45,41H3c-1.105,0-2-0.895-2-2V23h46v16C47,40.105,46.105,41,45,41z"></path> <path fill="#FFFFFF" d="M19.12,38.465c-0.387,0-0.754-0.037-1.101-0.112v-1.649c0.115,0.021,0.236,0.046,0.365,0.073 c0.129,0.026,0.269,0.04,0.419,0.04c0.351,0,0.602-0.105,0.752-0.316c0.15-0.212,0.226-0.573,0.226-1.086v-7.267h2.132v7.085 c0,1.062-0.233,1.868-0.698,2.414S20.051,38.465,19.12,38.465z"></path> <path fill="#FFFFFF" d="M28.745,33.615c0,0.487-0.124,0.919-0.371,1.297s-0.604,0.672-1.069,0.881 c-0.465,0.21-1.012,0.314-1.638,0.314c-0.523,0-0.961-0.037-1.316-0.11s-0.723-0.201-1.106-0.384v-1.891 c0.405,0.208,0.825,0.37,1.262,0.486s0.838,0.174,1.203,0.174c0.315,0,0.546-0.054,0.693-0.163s0.22-0.25,0.22-0.422 c0-0.107-0.03-0.201-0.088-0.282c-0.06-0.08-0.154-0.162-0.285-0.244c-0.13-0.082-0.479-0.251-1.044-0.505 c-0.512-0.232-0.896-0.458-1.152-0.677c-0.256-0.219-0.446-0.469-0.569-0.752c-0.124-0.283-0.186-0.617-0.186-1.004 c0-0.724,0.263-1.288,0.79-1.692s1.25-0.606,2.17-0.606c0.813,0,1.642,0.188,2.487,0.563l-0.65,1.638 c-0.734-0.336-1.368-0.504-1.901-0.504c-0.276,0-0.476,0.048-0.602,0.145s-0.188,0.217-0.188,0.359c0,0.154,0.08,0.292,0.239,0.414 c0.159,0.122,0.591,0.344,1.297,0.666c0.677,0.305,1.146,0.631,1.41,0.98C28.613,32.646,28.745,33.085,28.745,33.615z"></path></g></svg>
           </div>
           <div class="row">
             <div class="col text-center">
-              <p><small>University of Illinois · BA · 2009</small></p>
-              <p><small>Northeastern Illinois University · MA · 2018</small></p>
+              <p><small>Ruby on Rails · JavaScript (ES6+) · Vue.js · Node.js · HTML & CSS · PostgreSQL</small></p>
             </div>
           </div>
           <div class="row justify-content-center">
             <!-- Bootcamp -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><title>laptop</title><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.1" fill="#111111" stroke="#111111"><path fill="none" stroke-miterlimit="10" d="M41,30V8 c0-1.105-0.895-2-2-2H9C7.895,6,7,6.895,7,8v22"></path> <path fill="none" stroke="#111111" stroke-miterlimit="10" d="M41,30H7l-4.553,9.106 C1.782,40.435,2.749,42,4.236,42h39.528c1.487,0,2.454-1.565,1.789-2.894L41,30z"></path> <rect x="13" y="12" fill="none" stroke-miterlimit="10" width="22" height="12"></rect></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><title>window-dev</title><g><path fill="#707070" d="M45,45H3c-1.105,0-2-0.895-2-2V5c0-1.105,0.895-2,2-2h42c1.105,0,2,0.895,2,2v38C47,44.105,46.105,45,45,45z "></path> <rect x="3" y="10" fill="#FFFFFF" width="42" height="33"></rect> <circle fill="#E86C60" cx="4.5" cy="6.5" r="1.5"></circle> <circle fill="#EFD358" cx="9.5" cy="6.5" r="1.5"></circle> <circle fill="#72C472" cx="14.5" cy="6.5" r="1.5"></circle> <path fill="#5A7A84" d="M16,31.414l-4.707-4.707c-0.391-0.391-0.391-1.023,0-1.414L16,20.586L17.414,22l-4,4l4,4L16,31.414z"></path> <path fill="#5A7A84" d="M32,31.414L30.586,30l4-4l-4-4L32,20.586l4.707,4.707c0.391,0.391,0.391,1.023,0,1.414L32,31.414z"></path> <rect x="14.754" y="25" transform="matrix(0.2427 -0.9701 0.9701 0.2427 -7.0466 42.9738)" fill="#5A7A84" width="18.493" height="2"></rect></g></svg>
           </div>
           <div class="row">
             <div class="col text-center">
               <p><small>Actualize Coding Bootcamp · 2020</small></p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <!-- Universities -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><title>hat-3</title><g><path fill="#444444" d="M24,43c-7.29,0-13-3.075-13-7V23c0-0.553,0.448-1,1-1h24c0.552,0,1,0.447,1,1v13C37,39.925,31.29,43,24,43z"></path> <path fill="#444444" d="M44,35c-0.552,0-1-0.447-1-1V19c0-0.553,0.448-1,1-1s1,0.447,1,1v15C45,34.553,44.552,35,44,35z"></path> <path fill="#5B5B5B" d="M24,31c-0.165,0-0.33-0.041-0.479-0.122l-22-12C1.2,18.703,1,18.366,1,18s0.2-0.703,0.521-0.878l22-12 c0.299-0.162,0.659-0.162,0.958,0l22,12C46.8,17.297,47,17.634,47,18s-0.2,0.703-0.521,0.878l-22,12C24.33,30.959,24.165,31,24,31z"></path></g></svg>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p><small>Northeastern Illinois University · MA · 2018</small></p>
+              <p><small>University of Illinois · BA · 2009</small></p>
             </div>
           </div>
         </div>
@@ -71,7 +100,34 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.js" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 </body>
 
 </html>

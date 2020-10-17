@@ -42,12 +42,12 @@ h1 {
   color: var(--color3);
 }
 
-.section-one {
+#section-one {
   background-color: var(--color1);
   color: var(--color2);
 }
 
-.section-two {
+#about {
   background-color: var(--color4);
   color: var(--color1);
   padding-top: 10em;
@@ -58,21 +58,30 @@ svg {
   margin: 0.75em;
 }
 
-svg g,
-svg path,
-svg polyline,
-svg polygon {
+svg.monochrome g,
+svg.monochrome path,
+svg.monochrome polyline,
+svg.monochrome polygon {
   fill: var(--color2);
 }
 
-svg:hover g,
-svg:hover path,
-svg:hover polyline,
-svg:hover polygon {
+svg.monochrome:hover g,
+svg.monochrome:hover path,
+svg.monochrome:hover polyline,
+svg.monochrome:hover polygon {
   fill: white;
 }
 
-svg:hover {
+a.nav-link {
+  color: var(--color2);
+  font-size: 0.9em;
+}
+
+a.nav-link:hover {
+  color: white;
+}
+
+svg.monochrome:hover {
   cursor: pointer;
 }
 
