@@ -27,6 +27,7 @@
   --color2: #ddd3d0;
   --color3: palevioletred;
   --color4: #d9dbdc;
+  --color5: #f1cbd7;
 }
 
 body {
@@ -49,6 +50,8 @@ h1 {
 .section-two {
   background-color: var(--color4);
   color: var(--color1);
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 
 svg {
@@ -79,4 +82,9 @@ svg:hover {
 
 a:hover {
   text-decoration: none;
+}
+
+.schools p {
+  margin-top: -0.3em;
+  margin-bottom: 0.3em;
 }
