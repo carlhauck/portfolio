@@ -53,6 +53,12 @@ h1 {
   padding-top: 8em;
   padding-bottom: 8em;
 }
+#portfolio {
+  background-color: var(--color1);
+  color: var(--color2);
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
 
 svg {
   margin: 0.75em;
@@ -100,4 +106,30 @@ a:hover {
 .schools p {
   margin-top: -0.3em;
   margin-bottom: 0.3em;
+}
+
+.bg-dark {
+  background-color: var(--color1) !important;;
+  border-color: var(--color1);
+}
+
+.bg-light {
+  background-color: var(--color2) !important;;
+  border-color: var(--color2);
+}
+
+.not-fixed {
+  position: absolute;
+  top: 100vh;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.sticky {
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
