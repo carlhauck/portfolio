@@ -27,7 +27,7 @@
   --color2: #ddd3d0;
   --color3: palevioletred;
   --color4: #d9dbdc;
-  --color5: #f1cbd7;
+  --color5: #e58faa;
 }
 
 body {
@@ -132,4 +132,29 @@ a:hover {
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+a {
+  color: var(--color3); 
+}
+
+a:hover {
+  color: var(--color5); 
+  text-decoration: none;
+}
+
+.port-title {
+  color: var(--color3); 
+  font-size: 1.2em;
+}
+
+.port-tech {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-uniform {
+  width: 120%;
+  /* height: 1322p; */
+  object-fit: cover;
+  margin-bottom: 1.75em;
 }
