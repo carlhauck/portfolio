@@ -23,7 +23,7 @@
           <a class="nav-link p-light" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link p-light" href="#">Portfolio</a>
+          <a class="nav-link p-light" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link p-light" href="./Resume.pdf" target="_blank">Resume</a>
@@ -57,6 +57,7 @@
       </div>
     </div>
   </div>
+  <!-- About section start -->
   <div id="about" class="min-vh-100">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 justify-content-center align-items-center">
@@ -103,6 +104,7 @@
       </div>
     </div>
   </div>
+  <!-- Portfolio section start -->
   <div id="portfolio" class="min-vh-100">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 justify-content-center align-items-center">
@@ -110,28 +112,9 @@
           <h1 class="section-header"><span class="highlight">Portfolio</span></h1>
         </div>
       </div>
+      <!-- Folded Map -->
       <div class="row justify-content-center">
         <div class="col-md-7">
-          <!-- <div class="row"> -->
-            <!-- <div class="col-lg-6 col-md-12">
-              <img src="./assets/images/landing-page.jpg" class="d-block w-100 carousel-uniform" alt="landing page screenshot">
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <img src="./assets/images/about.jpg" class="d-block w-100 carousel-uniform" alt="about page screenshot">
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <img src="./assets/images/community.jpg" class="d-block w-100 carousel-uniform" alt="community view screenshot">
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <img src="./assets/images/map-modal.jpg" class="d-block w-100 carousel-uniform" alt="map modal screenshot">
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <img src="./assets/images/conversations.jpg" class="d-block w-100 carousel-uniform" alt="conversations view screenshot">
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <img src="./assets/images/profile.jpg" class="d-block w-100 carousel-uniform" alt="user profile screenshot">
-            </div>
-          </div> -->
           <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -186,70 +169,7 @@
   <!-- Local scripts -->
   <script src="./assets/js/bootstrap.js" crossorigin="anonymous"></script>
   <script src="./assets/js/smoothscroll.js" type="text/javascript" crossorigin="anonymous"></script>
-
-  <script>
-
-    const sectionOne = document.getElementById("section-one");
-    const sectionOneHeight = sectionOne.clientHeight;
-    const about = document.getElementById("about");
-    const navbar = document.getElementById("navbar");
-    var lastScrollTop = 0;
-    var scrollDirection = "d";
-    
-    function debounce(func, wait = 10, immediate = true) {
-      let timeout;
-      return function() {
-        let context = this, args = arguments;
-        let later = function() {
-          timeout = null;
-          if (!immediate) func.apply(context, args);
-        };
-        let callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-      };
-    }
-
-    function navbarAdjust() {
-
-      let st = window.pageYOffset || document.documentElement.scrollTop;
-      
-      if (st > lastScrollTop){
-        scrollDirection = "d";
-      } else {
-        scrollDirection = "u";
-      }
-
-      lastScrollTop = st <= 0 ? 0 : st;
-
-      if (scrollDirection === "d") {
-        if (window.pageYOffset >= sectionOneHeight) {
-          navbar.classList.remove("not-fixed");
-          navbar.classList.add("sticky");
-        } else if (window.pageYOffset >= 50) {
-          navbar.classList.remove("fixed-bottom");
-          navbar.classList.add("not-fixed");
-        }
-      } else {
-        if (window.pageYOffset < 50) {
-          navbar.classList.remove("not-fixed");
-          navbar.classList.add("fixed-bottom");
-        } else if (window.pageYOffset < sectionOneHeight) {
-          navbar.classList.remove("sticky");
-          navbar.classList.add("not-fixed");
-        }
-      }
-    }
-
-    // window.addEventListener('scroll', () => {
-    //   debounce(navbarAdjust);
-    //   debounce(checkScrollDirection);
-    // });
-
-    window.addEventListener('scroll', debounce(navbarAdjust));
-
-  </script>
+  <script src="./assets/js/navbaradjust.js" type="text/javascript" crossorigin="anonymous"></script>
 
 </body>
 
