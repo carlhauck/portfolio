@@ -31,6 +31,7 @@
 }
 
 body {
+  background-color: var(--color1);
   font-family: 'geomanist';
 }
 
@@ -152,9 +153,17 @@ a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.port-description {
+  font-size: 0.95em;
+}
+
 .carousel-uniform {
   width: 120%;
   /* height: 1322p; */
   object-fit: cover;
   margin-bottom: 1.75em;
+}
+
+.section-header {
+  margin-bottom: 0.4em;
 }
