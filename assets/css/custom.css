@@ -30,6 +30,12 @@
   --color5: #e58faa;
 }
 
+/* Small mobile */
+
+h1 {
+  font-size: 2.2em;
+}
+
 body {
   background-color: var(--color1);
   font-family: 'geomanist-regular';
@@ -158,12 +164,16 @@ a:hover {
 }
 
 .carousel-uniform {
-  width: 120%;
-  /* height: 1322p; */
   object-fit: cover;
-  margin-bottom: 1.75em;
 }
 
 .section-header {
   margin-bottom: 0.4em;
+}
+
+/* Bigger mobile+ */
+@media (min-width: 400px) {
+  h1 {
+    font-size: 2.5em;
+  }
 }
